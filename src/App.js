@@ -3,14 +3,6 @@ import './App.css';
 
 const message = 'cool cud';
 
-const Header = (props) => {
-  return (
-    <div className='App-header'>
-      <p>I ❤️ React</p>
-    </div>
-  )
-}
-
 const Heart = (props) => {
   return (
     <div className='heart'>
@@ -18,6 +10,10 @@ const Heart = (props) => {
       <p className='heart-message'>{props.msg}</p>
     </div>
   )
+}
+
+const Header = () => {
+  return <div className='App-header'>I 💖 React</div>
 }
 
 function App() {
